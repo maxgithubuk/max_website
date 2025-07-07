@@ -105,3 +105,46 @@ nav a {
   font-style: italic;
   font-weight: 200;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid black;
+  padding: 2rem 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-logo {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
