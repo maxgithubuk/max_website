@@ -58,7 +58,7 @@ nav a {
   width: 60vmin;
   height: 60vmin;
   top: 70%; /* Lower down */
-  right: 40%;
+  right: 10%;
   transform: translate(50%, -50%) rotate(15deg) scale(1.1);
   background: #ff4d4d;
   filter: blur(100px);
