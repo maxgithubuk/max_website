@@ -107,7 +107,7 @@ nav a {
 .how-i-can-help {
   background-color: #f9f9f9;
   padding: 4rem 2rem 6rem;
-  min-height: 80vh;
+  min-height: 60vh;
 }
 
 .help-title {
@@ -159,7 +159,7 @@ nav a {
 .publications {
   padding: 4rem 2rem 6rem;
   background-color: white;
-  min-height: 80vh;
+  min-height: 40vh;
 }
 
 .publications-title {
