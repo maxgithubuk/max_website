@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
-<body class="snap-container">
+<body>
   <header>
     <div class="logo">MAX MOSER</div>
     <nav>
@@ -17,7 +17,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="snap-container">
     <section class="hero snap-section" id="biography" data-scroll-fade>
       <div class="overlay">
         <div class="bio-text">
@@ -49,15 +49,20 @@
     <section class="publications snap-section" id="publications" data-scroll-fade>
       <h1 class="publications-title">Selected Publications</h1>
       <p class="publications-note"><em>J</em> = Journal, <em>P</em> = Popular Article, <em>S</em> = In Submission</p>
+
       <div class="publications-grid">
-        <div class="pub-item"><strong>[S.4]</strong> Moser, Max, et al. (2025)...</div>
-        <div class="pub-item"><strong>[S.3]</strong> Moser, Max, et al. (2025)...</div>
-        <div class="pub-item"><strong>[S.2]</strong> Moser, Max, et al. (2025)...</div>
-        <div class="pub-item"><strong>[S.1]</strong> Moser, Max, et al. (2025)...</div>
-        <div class="pub-item"><strong>[J.3]</strong> Luyten, P., Moser, M., & Fonagy, P. (2025)...</div>
-        <div class="pub-item"><strong>[J.2]</strong> Moser, Max, Barrett, A., Ozols, I., et al. (2024)...</div>
-        <div class="pub-item"><strong>[P.1]</strong> Moser, Max. (2024)...</div>
-        <div class="pub-item"><strong>[J.1]</strong> Luyten, P., Campbell, C., Moser, M., Fonagy, P. (2024)...</div>
+        <div class="pub-item"><strong>[S.4]</strong> Moser, Max, et al. (2025). <strong>Patient experiences of long-term psychodynamic psychotherapy for mood disorders...</strong> <em>Psychotherapy</em>.</div>
+        <div class="pub-item"><strong>[S.3]</strong> Moser, Max, et al. (2025). <strong>Supporting patients receiving long-term psychodynamic psychotherapy...</strong> <em>Psychotherapy</em>.</div>
+        <div class="pub-item"><strong>[S.2]</strong> Moser, Max, et al. (2025). <strong>Long-term psychodynamic psychotherapy for depression and complex depression: A mixed-methods synthesis.</strong> <em>World Psychiatry</em>.</div>
+        <div class="pub-item"><strong>[S.1]</strong> Moser, Max, et al. (2025). <strong>Patient experiences of LTPP for personality disorders: A qualitative interview study.</strong> <em>Journal of Counseling Psychology</em>.</div>
+
+        <div class="pub-item"><strong>[J.3]</strong> Luyten, P., Moser, M., & Fonagy, P. (2025). <a href="https://doi.org/10.1177/00048674251321761"><strong>Letter to the editor: Serious concerns about the introduction of MBT to the Australian Medicare Benefits Scheme.</strong></a> <em>Australian & New Zealand Journal of Psychiatry</em>.</div>
+        
+        <div class="pub-item"><strong>[J.2]</strong> Moser, Max, Barrett, A., Ozols, I., et al. (2024). <strong>Mood disorders psychodynamic psychotherapy evidence review: A systematic review and meta-aggregation.</strong> Anna Freud Centre.</div>
+
+        <div class="pub-item"><strong>[P.1]</strong> Moser, Max. (2024). <a href="https://www.fastcompany.com/91237453/why-gaining-power-makes-us-out-of-touch-with-the-people-we-lead"><strong>Why gaining power makes us out of touch with the people we lead.</strong></a> <em>Fast Company</em>.</div>
+        
+        <div class="pub-item"><strong>[J.1]</strong> Luyten, P., Campbell, C., Moser, M., Fonagy, P. (2024). <a href="https://doi.org/10.1016/j.cpr.2024.102380"><strong>The role of mentalizing in psychological interventions: A systematic review.</strong></a> <em>Clinical Psychology Review</em>.</div>
       </div>
     </section>
   </main>
@@ -67,8 +72,8 @@
       <div class="footer-logo">MAX</div>
       <ul>
         <li><a href="#biography">who I am</a></li>
-        <li><a href="#publications">projects</a></li>
-        <li><a href="#contact">contact</a></li>
+        <li><a href="#help">projects</a></li>
+        <li><a href="#publications">contact</a></li>
       </ul>
     </div>
     <div class="footer-middle">
@@ -93,7 +98,6 @@
         }
       });
     }, { threshold: 0.1 });
-
     document.querySelectorAll('[data-scroll-fade]').forEach(el => observer.observe(el));
   </script>
 </body>
