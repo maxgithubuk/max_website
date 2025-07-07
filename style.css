@@ -42,10 +42,31 @@ nav a {
 }
 
 .hero {
-  background: linear-gradient(to right, #fceae8, #f1f1f1);
+  position: relative;
+  background: #f1f1f1;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  width: 60vmin;
+  height: 60vmin;
+  top: 50%;
+  right: 20%;
+  transform: translate(50%, -50%) rotate(20deg);
+  background: #ff4d4d;
+  filter: blur(120px);
+  border-radius: 60% 40% 70% 50% / 50% 70% 40% 60%;
+  z-index: 0;
+}
+
+.hero .overlay {
+  position: relative;
+  z-index: 1;
 }
 
 .bio-text {
