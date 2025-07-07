@@ -82,14 +82,14 @@ nav a {
 .bio-line {
   font-family: 'Poppins', sans-serif;
   font-size: 4.2rem;
-  font-weight: 200;
-  letter-spacing: 0.05em;
+  font-weight: 250;
+  letter-spacing: 0.01em;
   line-height: 1.35;
   color: black;
   text-align: left;
-  max-width: 80ch;
-  margin: 0 auto;
-  position: relative;
+  margin: 0;
+  padding: 8rem 10vw;
+  max-width: 100%;
 }
 
 .dot {
