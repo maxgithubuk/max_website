@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background: #fff;
@@ -30,7 +30,7 @@ header {
 }
 
 .logo {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.2rem;
     letter-spacing: 1px;
 }
@@ -44,31 +44,33 @@ nav a {
 }
 
 .hero {
-    height: 100vh;
+    min-height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem 1rem;
     text-align: center;
-    background: linear-gradient(to bottom right, #fdf6f6, #f0f0ff);
+    background: linear-gradient(to bottom right, #fef3ec, #f5f5ff);
 }
 
 .hero h1 {
-    font-size: 3rem;
-    font-weight: 900;
+    font-size: 5rem;
+    font-weight: 400;
     text-transform: uppercase;
-    margin-bottom: 2rem;
-    letter-spacing: 1px;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.5rem;
 }
 
 .bio-block p {
-    font-family: 'Arial Black', Impact, sans-serif;
     font-size: 2rem;
-    font-weight: 900;
-    line-height: 1.1;
-    margin: 0.5rem 0;
-    color: #111;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 1.2rem 0;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.02rem;
 }
 
 .container {
