@@ -43,7 +43,7 @@ nav a {
 
 .hero {
   position: relative;
-  background: #f1f1f1;
+  background: white; /* Changed from #f1f1f1 to white */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -53,14 +53,14 @@ nav a {
 .hero::before {
   content: '';
   position: absolute;
-  width: 60vmin;
-  height: 60vmin;
-  top: 50%;
-  right: 20%;
-  transform: translate(50%, -50%) rotate(20deg);
+  width: 65vmin;
+  height: 65vmin;
+  top: 45%;
+  right: 15%;
+  transform: translate(50%, -50%) rotate(15deg) scale(1.1);
   background: #ff4d4d;
-  filter: blur(120px);
-  border-radius: 60% 40% 70% 50% / 50% 70% 40% 60%;
+  filter: blur(140px);
+  border-radius: 58% 42% 66% 40% / 47% 73% 38% 61%; /* More exaggerated irregularity */
   z-index: 0;
 }
 
