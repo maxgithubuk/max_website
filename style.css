@@ -6,6 +6,17 @@ body {
   color: #111;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em 2em;
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .snap-container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
@@ -136,4 +147,62 @@ header,
 footer {
   scroll-snap-align: none !important;
   flex-shrink: 0;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid black;
+  padding: 2rem 2rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95rem;
+  background-color: white;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-logo {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.footer-left ul,
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-left ul li,
+.footer-right ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-middle {
+  text-align: right;
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-middle p {
+  margin: 0.25rem 0;
+}
+
+.footer-right {
+  text-align: right;
+  min-width: 120px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
