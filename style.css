@@ -121,3 +121,19 @@ body {
   opacity: 1;
   transform: none;
 }
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.snap-section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+}
+
+header,
+footer {
+  scroll-snap-align: none !important;
+  flex-shrink: 0;
+}
