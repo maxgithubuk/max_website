@@ -232,9 +232,17 @@ footer {
 }
 
 .bio-section {
-  max-width: 800px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-  font-size: 1.1rem;
-  line-height: 1.7;
+  max-width: 100%;
+  padding: 8rem 2rem;
+  text-align: left;
+}
+
+.bio-section p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3rem;
+  font-weight: 350;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: black;
+  margin: 0;
 }
