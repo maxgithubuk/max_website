@@ -2,54 +2,95 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
   color: #111;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2em 2em;
-  background: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+.snap-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
-.logo {
-  font-weight: 600;
-}
-
-nav a {
-  margin-left: 2em;
-  text-decoration: none;
-  color: black;
-  font-weight: 400;
+.snap-section {
+  scroll-snap-align: start;
+  height: 100vh;
 }
 
 .hero {
   background: linear-gradient(to right, #fceae8, #f1f1f1);
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.overlay {
-  max-width: 90%;
-  width: 100%;
+.bio-text {
+  max-width: 100%;
+  padding: 8rem 2rem;
+  text-align: center;
+}
+
+.bio-line {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5rem;
+  font-weight: 350;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: black;
+  margin: 0;
+}
+
+.dot {
+  animation: blink 1.8s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.highlight {
+  font-style: italic;
+  font-weight: 200;
+}
+
+.how-i-can-help {
+  background-color: #f9f9f9;
+  padding: 6rem 2rem;
+}
+
+.help-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: left;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.help-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.5rem;
+}
+
+.help-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.help-item p {
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .publications {
   padding: 4rem 2rem;
   background-color: white;
-  color: black;
 }
 
 .publications-title {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 0.5rem;
   text-align: left;
 }
 
@@ -70,139 +111,10 @@ nav a {
   line-height: 1.6;
 }
 
-.bio-text {
-  max-width: 100%;
-  padding: 8rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.bio-line {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 5rem;
-  font-weight: 350;
-  letter-spacing: -0.03em;
-  line-height: 1.15;
-  color: black;
-  text-align: left;
-  margin: 0;
-  max-width: 100%;
-}
-
-.dot {
-  animation: blink 1.8s ease-in-out infinite;
-  font-weight: 400;
-}
-
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-.highlight {
-  font-style: italic;
-  font-weight: 200;
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  border-top: 1px solid black;
-  padding: 2rem 2rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: 0.95rem;
-  background-color: white;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.footer-left {
-  flex: 1;
-  min-width: 180px;
-}
-
-.footer-logo {
-  font-weight: 600;
-  margin-bottom: 0.75rem;
-}
-
-.footer-left ul,
-.footer-right ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-left ul li,
-.footer-right ul li {
-  margin-bottom: 0.5rem;
-}
-
-.footer-middle {
-  text-align: right;
-  flex: 1;
-  min-width: 220px;
-}
-
-.footer-middle p {
-  margin: 0.25rem 0;
-}
-
-.footer-right {
-  text-align: right;
-  min-width: 120px;
-}
-
-.footer a {
-  text-decoration: none;
-  color: black;
-}
-
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.how-i-can-help {
-  padding: 6rem 2rem;
-  background-color: #f9f9f9;
-  font-family: 'Poppins', sans-serif;
-}
-
-.help-title {
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-  text-align: left;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-}
-
-.help-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2.5rem;
-}
-
-.help-item h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-  margin-bottom: 1rem;
-}
-
-.help-item p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
-}
-
-
 [data-scroll-fade] {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-  will-change: opacity, transform;
 }
 
 [data-scroll-fade].in-view {
