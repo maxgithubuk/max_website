@@ -72,3 +72,25 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.socials a {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+
+/* OGILVY STYLE SECTION */
+.ogilvy-style {
+    background: #fff;
+    padding: 6rem 1rem;
+    text-align: center;
+}
+
+.ogilvy-text {
+    font-family: 'Arial Black', Impact, sans-serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: #111;
+    line-height: 0.9;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
