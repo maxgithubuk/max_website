@@ -19,6 +19,8 @@ header {
 
 .logo {
   font-weight: 600;
+  text-decoration: none;
+  color: black;
 }
 
 nav a {
@@ -191,6 +193,8 @@ footer {
 .footer-logo {
   font-weight: 600;
   margin-bottom: 0.75rem;
+  text-decoration: none;
+  color: black;
 }
 
 .footer-left ul,
