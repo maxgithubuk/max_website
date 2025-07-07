@@ -100,3 +100,8 @@ nav a {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
+
+.highlight {
+  font-style: italic;
+  font-weight: 200;
+}
