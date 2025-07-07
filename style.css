@@ -48,26 +48,15 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 3rem 1rem;
-    text-align: center;
+    padding: 5rem 4rem 4rem 4rem;
     background: linear-gradient(to bottom right, #fef3ec, #f5f5ff);
-}
-
-.hero h1 {
-    font-size: 5rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 2.5rem;
-    letter-spacing: 0.5rem;
 }
 
 .bio-block p {
     font-size: 2.25rem;
     font-weight: 400;
     line-height: 1.8;
-    margin: 1.2rem auto;
-    max-width: 1000px;
+    margin: 0;
     letter-spacing: 0.02rem;
     text-align: justify;
     text-justify: inter-word;
