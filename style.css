@@ -111,16 +111,15 @@ nav a {
   justify-content: space-between;
   align-items: flex-start;
   border-top: 1px solid black;
-  padding: 2rem 1rem;
+  padding: 2rem 2rem;
   font-family: 'Poppins', sans-serif;
   font-size: 0.95rem;
   background-color: white;
   flex-wrap: wrap;
+  gap: 2rem;
 }
 
-.footer-left,
-.footer-middle,
-.footer-right {
+.footer-left {
   flex: 1;
   min-width: 180px;
 }
@@ -130,14 +129,31 @@ nav a {
   margin-bottom: 0.75rem;
 }
 
-.footer ul {
+.footer-left ul,
+.footer-right ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.footer ul li {
+.footer-left ul li,
+.footer-right ul li {
   margin-bottom: 0.5rem;
+}
+
+.footer-middle {
+  text-align: right;
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-middle p {
+  margin: 0.25rem 0;
+}
+
+.footer-right {
+  text-align: right;
+  min-width: 120px;
 }
 
 .footer a {
