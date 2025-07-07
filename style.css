@@ -17,6 +17,17 @@ header {
   z-index: 1000;
 }
 
+.logo {
+  font-weight: 600;
+}
+
+nav a {
+  margin-left: 2em;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+}
+
 .snap-container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
