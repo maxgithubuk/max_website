@@ -158,9 +158,9 @@ nav a {
 }
 
 .publications {
-  padding: 2rem 2rem 3rem;
+  padding: 2rem 2rem 1.5rem; /* Reduced bottom padding */
   background-color: white;
-  min-height: auto; 
+  min-height: unset; /* Allow it to size naturally */
 }
 
 .publications-title {
