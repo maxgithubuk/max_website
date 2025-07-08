@@ -300,3 +300,17 @@ footer {
   color: black;
   margin: 0;
 }
+
+@media (max-width: 600px) {
+  .bio-text { padding: 6rem 1rem; }
+  .bio-line { font-size: 2.5rem; }
+  .help-grid { grid-template-columns: 1fr; gap: 1rem; }
+  .help-item { border-left: none; border-top: 1px solid black; }
+  .help-item:first-child { border-top: none; }
+  .publications-grid { grid-template-columns: 1fr; }
+  .bio-section { padding: 6rem 1rem; }
+  .bio-section p { font-size: 1.75rem; }
+  .footer { flex-direction: column; text-align: center; }
+  .footer-left, .footer-middle, .footer-right { text-align: center; }
+  .footer-middle { min-width: 0; }
+}
