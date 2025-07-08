@@ -332,31 +332,26 @@ footer {
 
 
 
-/* --- UPDATED FIXES FOR MOBILE OVERLAP ISSUE --- */
+/* --- FINAL MOBILE FIXES FOR OVERLAP AND SNAP SECTION CONSTRAINTS --- */
+
 .pub-item {
-  font-size: 0.95rem;
-  line-height: 1.6;
   word-break: break-word;
   overflow-wrap: anywhere;
   white-space: normal;
-  hyphens: auto;
-}
-
-.publications-grid {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.snap-container {
-  display: block;
-  overflow-x: hidden;
 }
 
 @media (max-width: 600px) {
+  .snap-section {
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  .snap-container {
+    overflow-y: visible !important;
+    height: auto !important;
+    display: block;
+  }
+
   .publications-grid {
     grid-template-columns: 1fr;
     padding: 0 1rem;
@@ -366,4 +361,9 @@ body {
     max-width: 100%;
   }
 }
-/* --- END FIXES --- */
+
+body {
+  overflow-x: hidden;
+}
+
+/* --- END FINAL FIXES --- */
