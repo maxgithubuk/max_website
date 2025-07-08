@@ -329,3 +329,28 @@ footer {
   .footer-left, .footer-middle, .footer-right { text-align: center; }
   .footer-middle { min-width: 0; }
 }
+
+
+
+/* --- FIXES FOR MOBILE OVERLAP ISSUE --- */
+.pub-item {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.publications-grid {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.snap-container {
+  display: block;
+  overflow-x: hidden;
+}
+/* --- END FIXES --- */
