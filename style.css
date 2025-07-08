@@ -300,7 +300,7 @@ footer {
   letter-spacing: -0.03em;
   line-height: 1.15;
   color: black;
-  margin: 0 0 2rem 0; /* Add bottom margin */
+  margin: 0 0 1rem 0; /* Add bottom margin */
 }
 
 @media (max-width: 600px) {
