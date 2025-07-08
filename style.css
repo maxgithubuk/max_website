@@ -170,7 +170,7 @@ nav a {
 }
 
 .publications {
-  padding: 6rem 2rem 1.5rem; /* Extra top padding so the header doesn't cover content */
+  padding: 4rem 2rem 1.5rem; /* Extra top padding so the header doesn't cover content */
   background-color: white;
   min-height: unset; /* Allow it to size naturally */
   scroll-margin-top: 6rem; /* Offset for anchor links and snap points */
