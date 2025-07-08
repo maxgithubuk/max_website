@@ -290,7 +290,10 @@ footer {
   max-width: 100%;
   padding: 8rem 2rem;
   text-align: left;
+  margin-bottom: 2rem
 }
+
+
 
 .bio-section p {
   font-family: 'Times New Roman', Times, serif;
