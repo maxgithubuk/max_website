@@ -332,12 +332,14 @@ footer {
 
 
 
-/* --- FIXES FOR MOBILE OVERLAP ISSUE --- */
+/* --- UPDATED FIXES FOR MOBILE OVERLAP ISSUE --- */
 .pub-item {
   font-size: 0.95rem;
   line-height: 1.6;
   word-break: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  hyphens: auto;
 }
 
 .publications-grid {
@@ -352,5 +354,16 @@ body {
 .snap-container {
   display: block;
   overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  .publications-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .pub-item {
+    max-width: 100%;
+  }
 }
 /* --- END FIXES --- */
